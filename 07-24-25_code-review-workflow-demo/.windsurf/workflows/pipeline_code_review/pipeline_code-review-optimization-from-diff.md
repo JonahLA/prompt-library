@@ -2,10 +2,11 @@
 description: Analyzes code to identify performance bottlenecks and suggests optimizations for improved resource utilization given a diff
 ---
 
-IN:
- - diff (diff between base branch and head of PR)
-OUT:
- - review (report containing performance optimization findings from code review; as copyable Markdown)
+INTERFACE:
+ - IN
+   - diff (diff between base branch and head of PR)
+ - OUT
+   - review (report containing performance optimization findings from code review; as copyable Markdown)
 
 1. Analyze code and identify high-cost operations
  - Use `view_file` tool to read the specified code, focusing on resource-intensive sections.

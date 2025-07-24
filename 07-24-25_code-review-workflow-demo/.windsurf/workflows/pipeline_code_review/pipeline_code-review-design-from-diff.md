@@ -2,10 +2,11 @@
 description: Conducts a code review on correct design given a diff
 ---
 
-IN:
- - diff (diff between base branch and head of PR)
-OUT:
- - review (report containing findings from code review; as copyable Markdown)
+INTERFACE:
+ - IN
+   - diff (file diff between base branch and head of PR)
+ - OUT
+   - review (report containing findings from code review; as copyable Markdown)
 
 1. Analyze code and dependencies
  - Use the `view_file` tool to read the specified code.

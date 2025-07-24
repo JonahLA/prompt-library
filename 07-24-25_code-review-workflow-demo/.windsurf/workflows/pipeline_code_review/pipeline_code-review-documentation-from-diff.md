@@ -2,10 +2,11 @@
 description: Analyzes code documentation for clarity, completeness, and quality, and suggests improvements given a diff
 ---
 
-IN:
- - diff (diff between base branch and head of PR)
-OUT:
- - review (report containing documentation quality findings from code review; as copyable Markdown)
+INTERFACE:
+ - IN
+   - diff (diff between base branch and head of PR)
+ - OUT
+   - review (report containing documentation quality findings from code review; as copyable Markdown)
 
 1. Analyze target documentation and corresponding code
  - Use `view_file` and `view_code_item` to read both the documentation and associated code.

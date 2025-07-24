@@ -2,10 +2,11 @@
 description: Conducts a code review on security given a diff
 ---
 
-IN:
- - diff (diff between base branch and head of PR)
-OUT:
- - review (report containing security findings from code review; as copyable Markdown)
+INTERFACE:
+ - IN
+   - diff (diff between base branch and head of PR)
+ - OUT
+   - review (report containing security findings from code review; as copyable Markdown)
 
 1. Analyze code and trace data flow
  - Use `view_file` tool to read the specified code.
