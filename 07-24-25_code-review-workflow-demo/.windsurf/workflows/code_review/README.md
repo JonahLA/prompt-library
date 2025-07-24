@@ -4,7 +4,7 @@ description: README for code review workflows
 
 ## Purpose
 
-These workflows are for having Windsurf perform a targetted code review on your code. They cover a few types of reviews:
+These workflows are for having Windsurf perform a specific code review on your code. They cover a few types of reviews:
  - on _code design patterns/principles_
  - on _documentation_
  - on _optimization_
