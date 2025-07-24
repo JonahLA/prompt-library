@@ -4,7 +4,7 @@ description: Conducts a code review on correct design given a diff
 
 INTERFACE:
  - IN
-   - diff (file diff between base branch and head of PR)
+   - diff (diff between base branch and head of PR)
  - OUT
    - review (report containing findings from code review; as copyable Markdown)
 
