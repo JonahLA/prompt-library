@@ -3,20 +3,23 @@ description: Analyzes code documentation for clarity, completeness, and quality,
 ---
 
 INTERFACE:
+
  - IN
    - diff (diff between base branch and head of PR)
  - OUT
    - review (report containing documentation quality findings from code review; as copyable Markdown)
 
-1. Analyze target documentation and corresponding code
+STEPS:
+
+A. Analyze target documentation and corresponding code
  - Use `view_file` and `view_code_item` to read both the documentation and associated code.
  - Understand the code's actual behavior to assess documentation accuracy and completeness.
 
-2. Clarify code's purpose if necessary
+B. Clarify code's purpose if necessary
  - If code behavior is unclear after reading, ask targeted questions before proceeding.
  - Example: "I see the `sync_records` function takes a `force` parameter. What is the specific behavior change when `force` is true?"
 
-3. Perform documentation quality analysis
+C. Perform documentation quality analysis
  - With clear understanding of code, analyze documentation against key quality criteria. Document deficiencies as findings.
  - Check for:
    - Completeness: Purpose (what/why), parameters (type/purpose/format), return values, exceptions/errors
@@ -24,7 +27,7 @@ INTERFACE:
    - Correctness & Accuracy: Synchronized with current implementation, no typos/grammar errors
    - Consistency: Adherence to project style guide (PHPDoc, JSDoc, etc.), consistent tone/formatting
 
-4. Synthesize and deliver the review
+D. Synthesize and deliver the review
  - If issues found, present structured list with:
    - Observation: Clear description of the documentation issue
    - Impact: Why it's problematic for developers
